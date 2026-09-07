@@ -1,0 +1,28 @@
+#menu_nev {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+
+    border-style: solid;
+    border-width: 1px;
+}
+
+#menu_nev p {    
+    font-size: 20px;      
+}
+
+#menu {
+    margin-top: 1px;
+    display: flex;
+
+    border-style: solid;
+    border-width: 1px;
+}
+
+#menu p {
+    margin-left: 280px;
+    padding: 10px 20px 10px 20px;
+    border-style: solid;
+}
