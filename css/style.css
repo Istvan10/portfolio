@@ -5,6 +5,8 @@ body {
     box-sizing:border-box;
 }
 
+
+
 #menu_nev {
     display: flex;
     flex-direction: column;   
@@ -38,3 +40,102 @@ body {
     padding: 10px 20px 10px 20px;
     border-style: solid;
 }
+
+
+
+#bemutatkozasH1 {
+    font-size: 40px;
+    padding-left: 43vw;
+    padding-top: 50px;
+    color: white;
+}
+
+#bemutatkozasBlokk {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+#bemutatkozasKep img{
+    height: 800px;
+    padding-top: 150px;
+    padding-right: 100px;
+}
+
+#bemutatkozasP {
+    padding-top: 110px;
+    width: 400px;
+    font-size: 32px;
+}
+
+
+
+#kezsegekH1 {
+    font-size: 40px;
+    padding-left: 45vw;
+    padding-top: 150px;
+    color: white;
+}
+
+#kezsegKepek {
+    padding-top: 100px;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+#kezsegKepek img{
+    height: 500px;
+}
+
+
+#kezsegKepek .kezsegKep {
+    background-color: #7B9669;
+    height: 600px;
+    width: 500px;
+}
+
+#htmlKep{
+    padding-top: 50px;
+}
+
+#cssKep{
+    padding-top: 50px;
+    padding-left: 75px;
+}
+
+#jsKep {
+    padding-top: 50px;
+    padding-left: 75px;
+}
+
+#pythonKep {
+    padding-top: 50px;
+}
+
+#sqlKep{
+    padding-top: 50px;
+}
+
+#gitKep{
+    padding-top: 50px;
+}
+
+#projektekBlokk {
+    color: white;
+}
+
+#projektekBlokk h1 {
+    font-size: 40px;
+    padding-left: 45vw;
+    padding-top: 150px;
+    color: white;
+}
+
+#projektekFlex {
+    display: flex;
+}
+
