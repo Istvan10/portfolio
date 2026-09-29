@@ -1,141 +1,600 @@
 body {
     background-color: #404E3B;
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 #menu_nev {
     display: flex;
-    flex-direction: column;   
-    justify-content: center;  
-    align-items: center;      
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
-    margin-top: 5px;
+    background-color: #7B9669;
+
+    margin: 0;
+
+    padding: 15;
+
+    color: white;
 
     border-style: solid;
     border-width: 1px;
-    color: white;
+    border-color: #7B9669;
 }
 
-#menu_nev p {    
-    font-size: 20px;      
+#menu_nev h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#menu_nev p {
+    margin: 0;
+    font-size: 18px;
 }
 
 #menu {
-    margin-top: 1px;
-    display: flex;
+    margin: 0;
 
-    background-color: #6c8480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #6C8480;
+
     border-style: solid;
     border-width: 1px;
+    border-color: #6C8480;
+}
+
+#menu a {
     color: white;
-}
+    text-decoration: none;
 
-#menu p {
-    margin-left: 280px;
-    padding: 10px 20px 10px 20px;
+    padding-top: 10px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+
     border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+
+    transition: background-color 0.3s;
 }
 
+#menu a:hover {
+    background-color: #7B9669;
+}
 
+#bemutatkozas {
+    width: auto;
+    max-width: 1200px;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+}
 
 #bemutatkozasH1 {
     font-size: 40px;
-    padding-left: 43vw;
-    padding-top: 50px;
+
+    text-align: center;
+
+    padding: 0;
+    margin-bottom: 70px;
+
     color: white;
+
+    font-weight: normal;
 }
 
 #bemutatkozasBlokk {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    gap: 70px;
     color: white;
 }
 
+#bemutatkozasKep {
+    width: 350px;
 
-#bemutatkozasKep img{
-    height: 800px;
-    padding-top: 150px;
-    padding-right: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #222;
+
+    background-color: #D9D9D9;
+}
+
+#bemutatkozasKep img {
+    width: 100%;
+    height: 480px;
+
+    object-fit: cover;
 }
 
 #bemutatkozasP {
-    padding-top: 110px;
-    width: 400px;
-    font-size: 32px;
+    width: 500px;
+
+    padding: 0;
+
+    font-size: 21px;
 }
 
+#bemutatkozasP p {
+    margin-bottom: 20px;
+}
 
+#kezsegekBlokk {
+    width: auto;
+    max-width: 1200px;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+}
 
 #kezsegekH1 {
     font-size: 40px;
-    padding-left: 45vw;
-    padding-top: 150px;
+
+    text-align: center;
+
+    padding: 0;
+
+    margin-bottom: 70px;
+
     color: white;
+
+    font-weight: normal;
 }
 
 #kezsegKepek {
-    padding-top: 100px;
     display: grid;
-    justify-self: center;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 50px;
-}
+    gap: 30px;
 
-#kezsegKepek img{
-    height: 500px;
-}
+    max-width: 1050px;
 
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
 
 #kezsegKepek .kezsegKep {
     background-color: #7B9669;
-    height: 600px;
-    width: 500px;
+
+    min-height: 360px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
 
-#htmlKep{
-    padding-top: 50px;
+#kezsegKepek .kezsegKep:hover {
+    transform: translateY(-8px);
 }
 
-#cssKep{
-    padding-top: 50px;
-    padding-left: 75px;
+#kezsegKepek img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: contain;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
 }
 
-#jsKep {
-    padding-top: 50px;
-    padding-left: 75px;
-}
+#kezsegKepek h2 {
+    margin: 0;
 
-#pythonKep {
-    padding-top: 50px;
-}
+    font-size: 24px;
 
-#sqlKep{
-    padding-top: 50px;
-}
-
-#gitKep{
-    padding-top: 50px;
+    color: white;
 }
 
 #projektekBlokk {
+    width: auto;
+    max-width: 1200px;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+
     color: white;
 }
 
 #projektekBlokk h1 {
     font-size: 40px;
-    padding-left: 45vw;
-    padding-top: 150px;
+
+    text-align: center;
+
+    padding: 0;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 70px;
+    margin-left: 0;
+
     color: white;
+    font-weight: normal;
 }
 
 #projektekFlex {
-    display: flex;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 30px;
+
+    max-width: 1100px;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 
+#snakeJatek,
+#minecraftSql,
+#pizzeria {
+    background-color: #344131;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+#snakeJatek:hover,
+#minecraftSql:hover,
+#pizzeria:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+#snakeJatek h2,
+#minecraftSql h2,
+#pizzeria h2 {
+    font-size: 25px;
+
+    font-weight: normal;
+
+    text-align: center;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+#snakeJatek img,
+#minecraftSql img,
+#pizzeria img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+#snakeJatek p,
+#minecraftSql p,
+#pizzeria p {
+    font-size: 15px;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+
+    color: #E7E7E7;
+}
+
+#kapcsolatBlokk {
+    width: auto;
+    max-width: 1200px;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+}
+
+#kapcsolatH1 {
+    font-size: 40px;
+    text-align: center;
+
+    padding: 0;
+    margin-bottom: 70px;
+
+    color: white;
+    font-weight: normal;
+}
+
+#kapcsolatAdatok {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    max-width: 900px;
+
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.kapcsolatElem {
+    background-color: #7B9669;
+
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+    text-align: center;
+}
+
+.kapcsolatElem h2 {
+    font-size: 21px;
+
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.kapcsolatElem p,
+.kapcsolatElem a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    margin: 0;
+}
+
+.kapcsolatElem a:hover {
+    text-decoration: underline;
+}
+
+#lablec {
+    width: auto;
+
+    background-color: #B8C9B0;
+
+    color: #1F2A1D;
+
+    text-align: center;
+
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+#lablec p {
+    margin-top: 4px;
+    margin-right: 0;
+    margin-bottom: 4px;
+    margin-left: 0;
+
+    font-size: 15px;
+}
+
+@media (max-width: 800px) {
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu a {
+        width: auto;
+
+        text-align: center;
+
+        padding-top: 12px;
+        padding-right: 15px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+    }
+
+    #bemutatkozas {
+        padding-top: 70px;
+        padding-right: 20px;
+        padding-bottom: 70px;
+        padding-left: 20px;
+    }
+
+    #bemutatkozasH1 {
+        font-size: 34px;
+        margin-bottom: 45px;
+    }
+
+    #bemutatkozasBlokk {
+        flex-direction: column;
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    #bemutatkozasKep {
+        width: 290px;
+    }
+
+    #bemutatkozasKep img {
+        height: 390px;
+    }
+
+    #bemutatkozasP {
+        width: 100%;
+        max-width: 550px;
+
+        font-size: 17px;
+    }
+
+    #kezsegekBlokk {
+        padding-top: 70px;
+        padding-right: 20px;
+        padding-bottom: 70px;
+        padding-left: 20px;
+    }
+
+    #kezsegekH1 {
+        font-size: 34px;
+
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 45px;
+        margin-left: 0;
+    }
+
+    #kezsegKepek {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    #kezsegKepek .kezsegKep {
+        min-height: 280px;
+
+        padding: 15px;
+    }
+
+    #kezsegKepek img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #kezsegKepek h2 {
+        font-size: 21px;
+    }
+
+    #projektekBlokk {
+        padding-top: 70px;
+        padding-right: 20px;
+        padding-bottom: 70px;
+        padding-left: 20px;
+    }
+
+    #projektekBlokk h1 {
+        font-size: 34px;
+
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 45px;
+        margin-left: 0;
+    }
+
+    #projektekFlex {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    #kapcsolatBlokk {
+        padding-top: 70px;
+        padding-right: 20px;
+        padding-bottom: 70px;
+        padding-left: 20px;
+    }
+
+    #kapcsolatH1 {
+        font-size: 34px;
+
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 45px;
+        margin-left: 0;
+    }
+
+    #kapcsolatAdatok {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #menu_nev h2 {
+        font-size: 22px;
+    }
+
+    #menu_nev p {
+        font-size: 14px;
+    }
+
+    #kezsegKepek {
+        grid-template-columns: 1fr;
+    }
+
+    #kezsegKepek .kezsegKep {
+        min-height: 300px;
+    }
+
+    #kezsegKepek img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #snakeJatek img,
+    #minecraftSql img,
+    #pizzeria img {
+        height: 200px;
+    }
+}
